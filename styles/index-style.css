@@ -1,0 +1,70 @@
+﻿/* 
+    #60bb10 - green
+    #ffac00 - yellow
+    #d31c1c - red
+    #0fc0e5 - blue
+    rgba(66, 66, 66, 0.90) - shadow
+*/
+
+
+* {
+    font-family: 'Architects Daughter';
+    letter-spacing: .05em;
+}
+
+html {
+    display: flex;
+    height: 99.9vh; 
+    background-color: #e5e5e5;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+#index-words-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+#index-words-nav button {
+    width: 8em;
+    height: 3em;
+    margin: 2%;
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(66, 66, 66, 0.90);
+}
+
+    .red-btn {
+        background-color: #d31c1c;
+        border-color: #ac1818;
+    }
+
+    .yellow-btn {
+        background-color: #ffac00;
+        border-color: #ba7d00;
+    }
+
+    .green-btn {
+        background-color: #60bb10;
+        border-color: #44850b;
+    }
+
+
+#index-info-nav button {
+    border-radius: 5px;
+    padding: 5%;
+    font-size: large;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(66, 66, 66, 0.90);
+    border-color: #44850b;
+}
