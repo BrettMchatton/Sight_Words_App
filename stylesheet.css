@@ -1,0 +1,135 @@
+﻿/************************************************
+//            Main Element Rules               //
+************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: .08em;
+}
+
+html {
+    display: flex;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    background: radial-gradient(#cfcfcf, #dedede);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(#26cb1e, #169010);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    box-shadow: 0px 6px 10px rgba(98, 98, 98, 0.90);
+}
+
+    header h2 {
+        margin: 2% auto;
+        padding: 1% 0;
+        font-weight: lighter;
+        font-size: 170%;
+        letter-spacing: .05em;
+    }
+
+footer {
+    background: linear-gradient(#26cb1e, #169010);
+    color: #fff;
+    text-align: center;
+    padding: 1% 0;
+    font-size: small;
+    box-shadow: 0px -6px 10px rgba(98, 98, 98, 0.90);
+}
+
+/************************************************
+//           Buttons                           //
+************************************************/
+
+#start-btn,
+#next-btn {
+    margin: auto;
+    padding: 10%;
+    background: linear-gradient(#26cb1e, #169010);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: larger;
+    border: none;
+    border-radius: .4em;
+    box-shadow: 3px 3px 10px rgba(98, 98, 98, 0.90);
+}
+
+    #next-btn {
+        margin-top: 5%;
+        padding: 5% 10%;
+    }
+
+    #start-btn:hover,
+    #next-btn:hover {
+        background: linear-gradient(#52ce4c, #34942f);
+        font-weight: bolder;
+        text-shadow: 0 0 30px black;
+        cursor: pointer;
+    }
+
+/************************************************
+//            Word Box and Words               //
+************************************************/
+
+#word-box {
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 5% 10%;
+    width: 25%;
+    text-align: center;
+    background: radial-gradient(#fff, #e1e1e1);
+    box-shadow: 3px 3px 10px rgba(98, 98, 98, 0.90);
+    border-radius: .4em;
+}
+
+/************************************************
+//            Smartphone Landscape             //
+************************************************/
+
+
+@media only screen 
+    and (min-device-width: 480px) 
+    and (max-device-width: 640px) 
+    and (orientation: landscape) {
+
+    #main-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Buttons */
+
+    #start-btn {
+        width: 50%;
+        padding: 5%;
+        font-size: initial;
+        box-shadow: 3px 3px 5px rgba(98, 98, 98, 0.90);
+    }
+
+    #next-btn {
+        margin: 5% auto;
+        padding: 4% 7%;
+        width: 30%;
+        text-align: center;
+    }
+
+    /* Words and Wordbox */
+
+    #word-box {
+        margin: 5% auto;
+        padding: 4% 5%;
+    }
+        
+}
